@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Form Validation</title>
+    <link href="StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="headerDiv">
+            <p>
+                <h1>´´¯`••._.•【﻿Ｒｅｇｉｓｔｒａｔｉｏｎ　Ｆｏｒｍ】•._.••`¯´´</h1>
+            </p>
+        </div>
+        <div class="formDiv">
+            <div class="formHeader">
+                <p>
+                    <h3>▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Create Account ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀</h3>
+                </p>
+            </div>
+            <form class="formDesign">
+                <div class="row">
+                    <label for="firstname">First Name: <input type="text" id="fname" name="fname" required="required" /></label>
+                    <p id="userfirstnameError" class="errorMsg"></p>
+                </div>
+                <div class="row">
+                    <label for="lastname">Last Name: <input type="text" id="lname" name="lname" required="required" /></label>
+                    <p id="userlastnameError" class="errorMsg"></p>
+                </div>
+                <div class="row">
+                    <label for="Address">Address: <input type="text" id="addr" name="addr" required="required" /></label>
+                    <p id="addrError" class="errorMsg"></p>
+                </div>
+                <div class="row">
+                    <label for="City">City: <input type="text" id="city" name="city" required="required" /></label>
+                    <p id="cityError" class="errorMsg"></p>
+                </div>
+                <div class="row">
+                    <label for="Postal Code">Postal Code: <input type="text" id="postal" name="postal" required="required" /></label>
+                    <p id="postalError" class="errorMsg"></p>
+                </div>
+                <div class="row">
+                    <label for="Province">Province: <input type="text" id="province" name="province" required="required" /></label>
+                    <p id="provinceError" class="errorMsg"></p>
+                </div>
+                <div class="row">
+                    <label for="Age">Age: <input type="text" id="age" name="age" required="required" /></label>
+                    <p id="ageError" class="errorMsg"></p>
+                </div>
+                <div class="row">
+                    <label for="Email">Email: <input type="text" id="email" name="email" required="required" /></label>
+                    <p id="emailError" class="errorMsg"></p>
+                </div>
+                <div class="row">
+                <label for="Password">Password: <input type="text" id="password" name="password" required="required" /></label>
+                <p id="emailError" class="errorMsg"></p>
+                </div>
+                <div class="row">
+                    <label for="Confirm Password">Confirm: <input type="text" id="confirm" name="confirm" required="required" /></label>
+                    <p id="passwordError" class="errorMsg"></p>
+                </div>
+                <center>
+                    <input type="button" id="submit" value="Submit" />
+                </center>
+            </form>
+        </div>
+
+        <div class="profileDiv">
+            <div class="formHeader">
+                <p>
+                    <h3>▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄ Profile Details ▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀</h3>
+                </p>
+            </div>
+                <section id="profile">
+                        <div class="row" id="userfirstnameSection">
+                            <label class="labelAlign" for="">First name: </label>
+                            <i class="pDesign" id="profileUsernamef">Empty</i>
+                        </div>
+                        <div class="row" id="userlastnameSection">
+                            <label class="labelAlign" for="">Last name: </label>
+                            <i class="pDesign" id="profileUsernamel">Empty</i>
+                        </div>
+                        <div class="row" id="emailSection">
+                            <label class="labelAlign" for="">Email Address: </label>
+                            <i class="pDesign" id="profileEmail">Empty</i>
+                        </div>
+                        <div class="row" id="age">
+                            <label class="labelAlign" for="">Age: </label>
+                            <i class="pDesign" id="profileAge">Empty</i>
+                        </div>
+                        <div class="row" id="city">
+                            <label class="labelAlign" for="">City: </label>
+                            <i class="pDesign" id="profileCity">Empty</i>
+                        </div>
+                        <div class="row" id="province">
+                            <label class="labelAlign" for="">Province: </label>
+                            <i class="pDesign" id="profileProvince">Empty</i>
+                        </div>
+
+                   <!--below section needs updating in javascript-->
+                        <div class="row" id="displayAddress">
+                            <label class="labelAlign" for="">Address: </label>
+                            <i class="pDesign" id="profileAddress">Empty</i>
+                        </div>
+                        <div class="row" id="displayPostal">
+                            <label class="labelAlign" for="">Postal: </label>
+                            <i class="pDesign" id="profilePostal">Empty</i>
+                        </div>
+                        <div class="row" id="displayPassword">
+                            <label class="labelAlign" for="">Password: </label>
+                            <i class="pDesign" id="profilePassword">Empty</i>
+                        </div>
+                </section>
+        </div>
+    </div>
+            <script src="JavaScript.js"></script>
+</body>
+</html>
